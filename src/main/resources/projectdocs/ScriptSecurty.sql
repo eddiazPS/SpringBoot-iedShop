@@ -19,7 +19,6 @@ INSERT INTO `members`
 VALUES
 ('john','{bcrypt}$2a$10$qeS0HEh7urweMojsnwNAR.vcXJeXR1UcMRZ2WcGQl9YeuspUdgF.q',1),
 ('mary','{bcrypt}$2a$10$qeS0HEh7urweMojsnwNAR.vcXJeXR1UcMRZ2WcGQl9YeuspUdgF.q',1),
-('edgar','{bcrypt}$2a$10$qeS0HEh7urweMojsnwNAR.vcXJeXR1UcMRZ2WcGQl9YeuspUdgF.q',1),
 ('susan','{bcrypt}$2a$10$qeS0HEh7urweMojsnwNAR.vcXJeXR1UcMRZ2WcGQl9YeuspUdgF.q',1);
 
 
@@ -39,7 +38,7 @@ VALUES
 ('mary','ROLE_MANAGER'),
 ('susan','ROLE_EMPLOYEE'),
 ('susan','ROLE_MANAGER'),
-('edgar','ROLE_ADMIN');
+('susan','ROLE_ADMIN');
 
 
 -- ********************************************************************************************* --
@@ -47,3 +46,12 @@ VALUES
 -- ********************************************************************************************* --
 -- ********************************************************************************************* --
 -- ********************************************************************************************* --
+
+
+name       rol             password
+('john','ROLE_EMPLOYEE' ,'fun123'),
+('mary','ROLE_EMPLOYEE', 'fun123'),
+('mary','ROLE_MANAGER',  'fun123'),
+('susan','ROLE_EMPLOYEE','fun123'),
+('susan','ROLE_MANAGER', 'fun123'),
+('susan','ROLE_ADMIN',   'fun123');

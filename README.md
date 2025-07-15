@@ -35,10 +35,28 @@ docker run -d --name appiedShop -p 8080:8080 app1:0.0
 
 
 
+# go Postman 
+
+1) revisar la coleccion postman en la carpeta de recursos del proyecto src/main/resources/projectdocs
+   Consumir cualquiera de los end points
+# OJO aduntar .jason con la coleccion *******
 
 
+2) Auth -> Basic Auth.
+2) tener en cuenta  estos usuario 
+ 
+
+   | Name  | Role          | Password |
+   |-------|---------------|----------|
+   | john  | ROLE_EMPLOYEE | fun123   |
+   | mary  | ROLE_EMPLOYEE | fun123   |
+   | mary  | ROLE_MANAGER  | fun123   |
+   | susan | ROLE_EMPLOYEE | fun123   |
+   | susan | ROLE_MANAGER  | fun123   |
+   | susan | ROLE_ADMIN    | fun123   |
 
 
+3)
 
 
 

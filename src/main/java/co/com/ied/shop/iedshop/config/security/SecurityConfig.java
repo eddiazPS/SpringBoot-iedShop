@@ -38,7 +38,6 @@ public class SecurityConfig {
                         .requestMatchers(HttpMethod.GET, "/iedapi/productos").hasAnyRole("EMPLOYEE")
                         .requestMatchers(HttpMethod.GET, "/iedapi/productos/**").hasAnyRole("EMPLOYEE")
                         .requestMatchers(HttpMethod.POST, "/iedapi/productos").hasAnyRole("MANAGER")
-                        .requestMatchers(HttpMethod.PUT, "/iedapi/productos").hasAnyRole("MANAGER")
                         .requestMatchers(HttpMethod.DELETE, "/iedapi/productos/**").hasAnyRole("ADMIN")
 
         );
