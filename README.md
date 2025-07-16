@@ -1,14 +1,46 @@
-# SpringBoot-iedShop
+# SpringBoot-iedShop @Autor 'Edgar Hernando Diaz'
 
 # Develop
 
-Api Producto usa el unicializador Data Rest de SpringBoot no es necesario definir controlador 
+Esta Api tienen seguridad basica con los roles de empleado, jefe y administrador.
+Nota: revisar usarios, passwords y roles en la seccicion  **Run Scripts**
 
+La Api iedShop usa un icializador llamado Data Rest de SpringBoot donde se declaran repositorios y se definen las enidades con esto y el inicializador Data Rest da y no es necesario definir servicio ni controlador para el CRUD de Productos e Inventarios ver los endPoints en la coleccion Postman en la seccion **go Postman** , estos endpoints estan indicados con -REST
+
+
+# End Points
+
+Esta api tiene estos endpoints
+
+
+Producto
+
+| Nombre                   | Endpoint                             | Controlador y Servicio |
+|--------------------------|--------------------------------------|------------------------|
+| All-productos_REST       | http://localhost:8080/productos      | NO                     |
+| productosById-REST       | http://localhost:8080/productos/2    | NO                     |
+| Crea-productos-REST      | http://localhost:8080/productos      | NO                     |
+| Actualizaproductos-REST  | http://localhost:8080/productos/1    | NO                     |
+| Productos-REST           | http://localhost:8080/productos/6    | NO                     |
+| All-products-controller  | http://localhost:8080/prod/all       | SI                     |
+
+
+
+
+
+Inventario
+
+| Nombre                                   | Endpoint                                | Controlador y Servicio |
+|------------------------------------------|-----------------------------------------|-------------------------|
+| All-inventario-REST                      | http://localhost:8080/inventario        | NO                      |
+| ActualizaInventarioProductoID-controller | http://localhost:8080/inve/4            | SI                      |
+| Actualizar-Inventario-inventario_id-REST | http://localhost:8080/inventario/1      | SI                      |
+| ConsultaInventario-producto-controller   | http://localhost:8080/inve/producto/4   | SI                      |
 
 
 # Start MySql Docker
 
-mysql 
+MySql 
 
 ```
 #docker run --name mysql -p 3306:3306 -e MYSQL_ALLOW_EMPTY_PASSWORD=yes -d mysql
