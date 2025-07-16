@@ -63,9 +63,9 @@ Inventario
 
 # go Postman 
 
-1) revisar la coleccion postman en la carpeta de recursos del proyecto src/main/resources/projectdocs/IedShop-docker.postman_collection.json
+1) revisar la coleccion postman en la carpeta de recursos del proyecto  `src/main/resources/projectdocs/IedShop-docker.postman_collection.json `
    
-     Consumir cualquiera de los end points
+     Cargar la coleccion en el postman y Consumir cualquiera de los end points...
 
 
 
@@ -81,6 +81,13 @@ Inventario
    | edgar | ROLE_EMPLOYEE | fun123   |
    | edgar | ROLE_MANAGER  | fun123   |
    | edgar | ROLE_ADMIN    | fun123   |
+
+
+# logs 
+
+el archivo log de la aplicacion se almacena en la carpeta del proyecto  `logs/IEDshopApp.log`
+
+hay un archivo log de muestra que esta en la direccion `src/main/resources/projectdocs/ej-IEDshopApp.log`
 
 
 

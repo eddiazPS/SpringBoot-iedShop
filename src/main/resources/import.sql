@@ -6,5 +6,5 @@ INSERT INTO productos ( nombre , precio) VALUES ('bike',3000);
 
 
 INSERT INTO inventario ( cantidad , producto_id) VALUES (5,1);
-INSERT INTO inventario ( cantidad , producto_id) VALUES (5,2);
-INSERT INTO inventario ( cantidad , producto_id) VALUES (5,5);
+INSERT INTO inventario ( cantidad , producto_id) VALUES (50,2);
+INSERT INTO inventario ( cantidad , producto_id) VALUES (500,3);
