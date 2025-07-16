@@ -38,7 +38,25 @@ docker run -d --name appiedShop -p 8080:8080 app1:0.0
 
 Nota: Al iniciar la app se crean las tablas en BD y se poblan automaticamente
 
-datos 
+datos:
+
+Producto
+
+| ID | Cantidad | Producto_ID |
+|----|----------|-------------|
+| 1  | 5        | 1           |
+| 2  | 5        | 2           |
+| 3  | 5        | 3           |
+
+
+Inventario
+
+| ID | Cantidad | Producto_ID |
+|----|----------|-------------|
+| 1  | 5        | 1           |
+| 2  | 5        | 2           |
+| 3  | 5        | 3           |
+
 
 
 
