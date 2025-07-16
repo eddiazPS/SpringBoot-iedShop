@@ -58,7 +58,15 @@ Inventario
 | 3  | 5        | 3           |
 
 
+# Start Docker app
 
+Generar imagen con el Docker con el Dockerfile que esta en los recursos del proyecto
+
+Correr el contenedor en el puerto 80:80
+
+Nota: asegurarse que Bd my sql tenga el esquema y el usuario activo
+
+usar postman y la coleccion de request
 
 
 # go Postman 
@@ -91,13 +99,5 @@ hay un archivo log de muestra que esta en la direccion `src/main/resources/proje
 
 
 
-# Docker app 
 
-Generar imagen con el doquer file que esta en los recursos del proyecto
-
-Correr el contenedor 
-
-Nota: asegurarse que Bd my sql tenga el esquema y el usuario habilitados
-
-usar postman y la coleccion de request 
 
