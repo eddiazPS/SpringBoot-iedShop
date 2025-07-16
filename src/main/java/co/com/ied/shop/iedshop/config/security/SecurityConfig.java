@@ -52,6 +52,8 @@ public class SecurityConfig {
                         .requestMatchers(HttpMethod.GET, "/prod/all").permitAll()
                         .requestMatchers(HttpMethod.POST, "/inve/**").permitAll()
                         .requestMatchers(HttpMethod.GET, "/inve/producto/**").permitAll()
+                        .requestMatchers(HttpMethod.GET, "/swagger-ui/index.html").permitAll()
+                        .requestMatchers(HttpMethod.GET, "/swagger-ui.html").permitAll()
 
         );
 

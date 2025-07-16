@@ -37,13 +37,17 @@ public class InventarioController {
     private static final org.slf4j.Logger log = org.slf4j.LoggerFactory.getLogger(InventarioController.class);
 
     /**
-     *Controlador que consulta el inventario con el producto id
+     * Consulta el inventario de un producto específico por el ID de un producto.
      *
-     * #endPoint = serverPath/inve/producto/{id}
+     * <p>Este endpoint busca el producto por su identificador en la base de datos.
+     * Si el producto no existe, lanza una excepción {@link DataNotFoundException}.
+     * Si el producto existe pero no tiene inventario registrado, también lanza una excepción.
+     * En caso exitoso, retorna un objeto con el mensaje y el inventario encontrado.</p>
      *
-     * @param id
-     * @return ResponseEntity  inventario consultado y mensaje
-     *
+     * @param id el ID del producto a consultar.
+     * @return una respuesta HTTP con un mapa que contiene un mensaje descriptivo y
+     *         el objeto {@link Inventario} correspondiente.
+     * @throws DataNotFoundException si el producto o su inventario no se encuentra en la base de datos.
      */
     @GetMapping("/producto/{id}")
     public ResponseEntity<?> inventarioProducto(@PathVariable Long id) {
@@ -59,14 +63,23 @@ public class InventarioController {
     }
 
     /**
-     *Controlador que actualiza el inventario con el producto id
+     * Controlador que actualiza el inventario de un producto específico.
      *
-     * #endPoint = serverPath/inve/{id}
+     * Este endpoint recibe el ID de un producto y la nueva cantidad de inventario a actualizar.
+     * Si el producto no existe, lanza una excepción `DataNotFoundException`.
      *
-     * @param id del producto
-     * @param inventarioNewDto con la cantidad a actualizar
-     * @return ResponseEntity  inventario actualizado y mensaje
+     * ### Endpoint
+     * `POST /inve/{id}`
      *
+     * @param id El ID del producto cuyo inventario se actualizará.
+     * @param inventarioNewDto Objeto que contiene la nueva cantidad del producto en inventario.
+     * @return ResponseEntity con un mapa que contiene el mensaje de éxito y los detalles del inventario actualizado.
+     *
+     * ### Respuesta
+     * - `mensaje`: Mensaje indicando que el inventario ha sido actualizado con éxito.
+     * - `inventario`: El inventario actualizado con la nueva cantidad.
+     *
+     * @throws DataNotFoundException Si el producto con el ID especificado no existe en la base de datos.
      */
     @PostMapping("/{id}")
     @ResponseStatus(HttpStatus.CREATED)
