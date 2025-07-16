@@ -92,18 +92,20 @@ Inventario
 
 # Start Docker app
 
-Generar imagen con el Docker con el Dockerfile que esta en los recursos del proyecto
+1) Generar Jar en el proyecto
 
-Correr el contenedor en el puerto 80:80
+2) Generar imagen con el Docker con el Dockerfile que esta en los recursos del proyecto
+
+3) Correr el contenedor en el puerto 80:80
 
 Nota: asegurarse que Bd my sql tenga el esquema y el usuario activo
 
-usar postman y la coleccion de request
+4) Usar postman y la coleccion de request
 
 
 # go Postman 
 
-1) revisar la coleccion postman en la carpeta de recursos del proyecto  `src/main/resources/projectdocs/IedShop-docker.postman_collection.json `
+1) Revisar la coleccion postman en la carpeta de recursos del proyecto  `src/main/resources/projectdocs/IedShop-docker.postman_collection.json `
    
      Cargar la coleccion en el postman y Consumir cualquiera de los end points...
 
@@ -125,9 +127,9 @@ usar postman y la coleccion de request
 
 # logs 
 
-el archivo log de la aplicacion se almacena en la carpeta del proyecto  `logs/IEDshopApp.log`
+El archivo log de la aplicacion se almacena en la carpeta del proyecto  `logs/IEDshopApp.log`
 
-hay un archivo log de muestra que esta en la direccion `src/main/resources/projectdocs/ej-IEDshopApp.log`
+Hay un archivo log de muestra que esta en la direccion `src/main/resources/projectdocs/ej-IEDshopApp.log`
 
 
 
