@@ -31,11 +31,11 @@ Producto
 Inventario
 
 | Nombre                                   | Endpoint                                | Controlador y Servicio |
-|------------------------------------------|-----------------------------------------|-------------------------|
-| All-inventario-REST                      | http://localhost:8080/inventario        | NO                      |
-| ActualizaInventarioProductoID-controller | http://localhost:8080/inve/4            | SI                      |
-| Actualizar-Inventario-inventario_id-REST | http://localhost:8080/inventario/1      | SI                      |
-| ConsultaInventario-producto-controller   | http://localhost:8080/inve/producto/4   | SI                      |
+|------------------------------------------|-----------------------------------------|------------------------|
+| All-inventario-REST                      | http://localhost:8080/inventario        | NO                     |
+| ActualizaInventarioProductoID-controller | http://localhost:8080/inve/4            | SI                     |
+| Actualizar-Inventario-inventario_id-REST | http://localhost:8080/inventario/1      | NO                     |
+| ConsultaInventario-producto-controller   | http://localhost:8080/inve/producto/4   | SI                     |
 
 
 # Start MySql Docker
