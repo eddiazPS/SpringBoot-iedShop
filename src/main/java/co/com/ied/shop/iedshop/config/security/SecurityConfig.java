@@ -38,13 +38,12 @@ public class SecurityConfig {
                         .requestMatchers(HttpMethod.GET, "/iedapi/productos").hasAnyRole("EMPLOYEE")
                         .requestMatchers(HttpMethod.GET, "/iedapi/productos/**").hasAnyRole("EMPLOYEE")
                         .requestMatchers(HttpMethod.POST, "/iedapi/productos").hasAnyRole("MANAGER")
+                        .requestMatchers(HttpMethod.PATCH, "/iedapi/productos/**").hasAnyRole("MANAGER")
                         .requestMatchers(HttpMethod.DELETE, "/iedapi/productos/**").hasAnyRole("ADMIN")
-
         );
 
         http.httpBasic(Customizer.withDefaults());
         http.csrf(csrf -> csrf.disable());
-
         return http.build();
 
     }

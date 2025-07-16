@@ -2,11 +2,7 @@ package co.com.ied.shop.iedshop.models.entity;
 
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.Max;
-import jakarta.validation.constraints.Min;
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
+
 
 import java.math.BigDecimal;
 
@@ -15,7 +11,7 @@ import java.math.BigDecimal;
 public class Inventario {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
 
@@ -27,14 +23,7 @@ public class Inventario {
     @Column(name = "cantidad")
     private Long cantidad;
 
-    public Inventario() {
-    }
 
-    public Inventario(Long cantidad, Long id, Long producto_id) {
-        this.cantidad = cantidad;
-        this.id = id;
-        this.producto_id = producto_id;
-    }
 
 
     public Long getCantidad() {

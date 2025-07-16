@@ -38,7 +38,7 @@ VALUES
 ('mary','ROLE_MANAGER'),
 ('susan','ROLE_EMPLOYEE'),
 ('susan','ROLE_MANAGER'),
-('susan','ROLE_ADMIN');
+('edgar','ROLE_ADMIN');
 
 
 -- ********************************************************************************************* --
@@ -52,6 +52,6 @@ name       rol             password
 ('john','ROLE_EMPLOYEE' ,'fun123'),
 ('mary','ROLE_EMPLOYEE', 'fun123'),
 ('mary','ROLE_MANAGER',  'fun123'),
-('susan','ROLE_EMPLOYEE','fun123'),
-('susan','ROLE_MANAGER', 'fun123'),
-('susan','ROLE_ADMIN',   'fun123');
+('edgar','ROLE_EMPLOYEE','fun123'),
+('edgar','ROLE_MANAGER', 'fun123'),
+('edgar','ROLE_ADMIN',   'fun123');

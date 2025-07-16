@@ -53,7 +53,7 @@ docker run -d --name appiedShop -p 8080:8080 app1:0.0
    | mary  | ROLE_MANAGER  | fun123   |
    | susan | ROLE_EMPLOYEE | fun123   |
    | susan | ROLE_MANAGER  | fun123   |
-   | susan | ROLE_ADMIN    | fun123   |
+   | edgar | ROLE_ADMIN    | fun123   |
 
 
 3)
