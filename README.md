@@ -1,5 +1,10 @@
 # SpringBoot-iedShop
 
+# Develop
+
+Api Producto usa el unicializador Data Rest de SpringBoot no es necesario definir controlador 
+
+
 
 # Start MySql Docker
 
@@ -31,6 +36,9 @@ app iedShop
 docker run -d --name appiedShop -p 8080:8080 app1:0.0
 ```
 
+Nota: Al iniciar la app se crean las tablas en BD y se poblan automaticamente
+
+datos 
 
 
 

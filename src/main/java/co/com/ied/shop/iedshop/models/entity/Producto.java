@@ -24,8 +24,9 @@ public class Producto {
     @Column(name = "precio")
     private BigDecimal precio;
 
-    // un producto esa una vez en el niventario
-
+  /*  @OneToOne ( mappedBy = "productoDetail"
+                ,cascade = CascadeType.ALL)
+    private Inventario inventario;*/
 
     public Producto() {
     }
