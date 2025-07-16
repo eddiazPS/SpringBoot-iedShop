@@ -13,7 +13,7 @@ import org.springframework.transaction.annotation.Transactional;
 public class ServiceInventarioImp implements ServiceInventarioI{
 
     private InventarioRepository inventarioRepository;
-    private ProductoRepository productoRepository;
+
 
     @Autowired
     public ServiceInventarioImp (InventarioRepository inventarioRepository , ProductoRepository productoRepository ) {
@@ -31,7 +31,6 @@ public class ServiceInventarioImp implements ServiceInventarioI{
 
     @Override
     public Inventario findByProductId(Long id) {
-
         return inventarioRepository.findById(id).get();
     }
 

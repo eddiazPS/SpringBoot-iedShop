@@ -63,26 +63,27 @@ Inventario
 
 # go Postman 
 
-1) revisar la coleccion postman en la carpeta de recursos del proyecto src/main/resources/projectdocs
-   Consumir cualquiera de los end points
-# OJO aduntar .jason con la coleccion *******
+1) revisar la coleccion postman en la carpeta de recursos del proyecto src/main/resources/projectdocs/IedShop-docker.postman_collection.json
+   
+     Consumir cualquiera de los end points
 
 
-2) Auth -> Basic Auth.
-2) tener en cuenta  estos usuario 
- 
+
+2) El API cuenta con Autenticacion Basica 
+   tener en cuenta  estos usuario  Y roles 
+
 
    | Name  | Role          | Password |
    |-------|---------------|----------|
    | john  | ROLE_EMPLOYEE | fun123   |
    | mary  | ROLE_EMPLOYEE | fun123   |
    | mary  | ROLE_MANAGER  | fun123   |
-   | susan | ROLE_EMPLOYEE | fun123   |
-   | susan | ROLE_MANAGER  | fun123   |
+   | edgar | ROLE_EMPLOYEE | fun123   |
+   | edgar | ROLE_MANAGER  | fun123   |
    | edgar | ROLE_ADMIN    | fun123   |
 
 
-3)
+
 
 
 

@@ -8,6 +8,13 @@ public class InventarioDTO {
     @NotNull(message = "cardId no puede ser nulo")
     private Long cantidad;
 
+    public InventarioDTO() {
+    }
+
+    public InventarioDTO(Long cantidad) {
+        this.cantidad = cantidad;
+    }
+
     public @NotNull(message = "cardId no puede ser nulo") Long getCantidad() {
         return cantidad;
     }
