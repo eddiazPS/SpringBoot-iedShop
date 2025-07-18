@@ -92,16 +92,22 @@ Inventario
 
 # Start Docker app
 
-1) Generar Jar en el proyecto
 
-2) Generar imagen con el Docker con el Dockerfile que esta en los recursos del proyecto
+1) Se genero la imagen con el Docker con el Dockerfile que esta en los recursos del proyecto
 
-3) Correr el contenedor en el puerto 80:80
 
-Nota: asegurarse que Bd my sql tenga el esquema y el usuario activo
+Nota: la imagen del contenedor se alamaceno en docker hub  https://hub.docker.com/r/dockeddiaz1/iedshopapp1
+
+```
+docker pull dockeddiaz1/iedshopapp1:1.0
+```
+**Asegurarse que el contenedor de MySql este corriendo**
+
+2) Correr el contenedor en el puerto 80:80
+
+Nota: asegurarse que Bd MySql tenga el esquema y el usuario activo
 
 4) Usar postman y la coleccion de request
-
 
 # go Postman 
 
